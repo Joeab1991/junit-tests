@@ -1,7 +1,10 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.List;
+
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertSame;
 
 public class CohortTest {
 
@@ -26,7 +29,7 @@ public class CohortTest {
 	@Test
 	public void testGetStudents() {
 
-		assertEquals(0, cohort.getStudents());
+		assertEquals(2, cohort.getStudents().size());
 	}
 	//    - A `Cohort` instance can get the average, and it's being calculated correctly.
 	@Test
